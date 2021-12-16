@@ -18,9 +18,9 @@ jobs:
           print(platform.processor())
         shell: python 
   run-windows-cmd:
-   run-on: windows-latest
-   steps:
-     - name: Get work DIR
-     PowerShell
-       run: pwd
-       shell: bash  
+    run-on: windows-latest
+    steps:
+      - name: Get work DIR
+      PowerShell
+        run: pwd
+        shell: bash  
