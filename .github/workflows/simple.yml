@@ -19,6 +19,8 @@ jobs:
         shell: python 
   run-windows-cmd:
    run-on: windows-latest
-      - name: get working directory
-        run: pwd
-        shell: bash  
+   steps:
+     - name: Get work DIR
+     PowerShell
+       run: pwd
+       shell: bash  
