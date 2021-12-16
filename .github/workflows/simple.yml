@@ -22,5 +22,6 @@ jobs:
     steps:
       - name: Get work DIR
       PowerShell
+        run: Get-Location
         run: pwd
         shell: bash  
