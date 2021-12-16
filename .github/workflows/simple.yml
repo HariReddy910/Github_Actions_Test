@@ -17,8 +17,8 @@ jobs:
           import platform
           print(platform.processor())
         shell: python 
-    run-windows-cmd:
-      run-on: windows-latest
+  run-windows-cmd:
+   run-on: windows-latest
       - name: get working directory
         run: pwd
         shell: bash  
