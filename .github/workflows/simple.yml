@@ -18,10 +18,9 @@ jobs:
           print(platform.processor())
         shell: python 
   run-windows-cmd:
-    run-on: windows-latest
+    runs-on: windows-latest
     steps:
       - name: Get work DIR
-        run: Get-Location
       PowerShell
         run: pwd
         shell: bash  
