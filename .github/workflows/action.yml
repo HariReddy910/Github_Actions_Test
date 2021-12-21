@@ -6,11 +6,16 @@ jobs:
   harindra:
     runs-on: ubuntu-latest
     steps:
+      - name: executing multiple cmmds
+        run: |
+          pwd
+          ls
+    steps:
       - name: simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
         with:
-          who-to-greet: Hey Reddy!
+          who-to-greet: Reddy!
       - name: output capture log greet time
         run: echo "${{steps.greet.outputs.time}}"
 
