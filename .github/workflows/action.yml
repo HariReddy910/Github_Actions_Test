@@ -6,11 +6,6 @@ jobs:
   harindra:
     runs-on: ubuntu-latest
     steps:
-      - name: executing multiple cmmds
-        run: |
-          pwd
-          ls
-    steps:
       - name: simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1
