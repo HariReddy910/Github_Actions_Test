@@ -3,7 +3,7 @@ name: my 1st workflow
 on: [push]
 
 jobs:
-  run-shell-command:
+  job-linux:
     runs-on: ubuntu-latest
     steps:
       - name: echo a string
@@ -17,8 +17,9 @@ jobs:
           import platform
           print(platform.processor())
         shell: python 
-  run-windows-cmd:
+  job-windows:
     runs-on: windows-latest
+    needs: ["job-linux"]  
     steps:
       - name: Get work DIR
         run: pwd
