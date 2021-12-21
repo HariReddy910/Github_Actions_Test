@@ -1,16 +1,16 @@
-name: Action workflow
+name: checkout src
+on: [push]
 
-on: [push] 
-
-jobs: 
-  harindra:
+jobs:
+  checkout-code:
     runs-on: ubuntu-latest
-    steps:
-      - name: simple JS Action
-        id: greet
-        uses: actions/hello-world-javascript-action@v1
-        with:
-          who-to-greet: Reddy
-      - name: output capture log greet time
-        run: echo "${{steps.greet.outputs.time}}"
+    steps:  
+      - name: Github code
+        uses: HariReddy910/123
+      - name: list the files
+        run: |
+          ls
+          pwd
+          echo "harindra"
+
 
